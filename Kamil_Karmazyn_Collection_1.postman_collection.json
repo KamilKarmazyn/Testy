@@ -1,0 +1,162 @@
+{
+	"info": {
+		"_postman_id": "e4142307-6437-4b16-afc8-aa8b6503bc9b",
+		"name": "Collection_1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET_User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "POST_User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " { \r\n        \"id\": 1,\r\n        \"name\": \"John Bravo\",\r\n        \"username\": \"Jan\",\r\n        \"email\": \"JohnBravo@wp.pl\",\r\n        \"address\": {\r\n            \"street\": \"Black Messa\",\r\n            \"suite\": \"Apt. 321\",\r\n            \"city\": \"Sri Dźajawardanapura Kotte\",\r\n            \"zipcode\": \"32221-3221\",\r\n            \"geo\": {\r\n                \"lat\": \"-37.3159\",\r\n                \"lng\": \"81.1496\"\r\n                   }}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_User_Param",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/users",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GET_User_Test",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "cc5e793d-48e0-46bb-8601-2f2399f249b4",
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {\r",
+							"    pm.response.to.have.status(200);\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy pierwszy użytkownik to Leanne Graham\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[0].name).to.eql(\"Leanne Graham\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy drugi użytkownik to  Ervin Howell\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[1].name).to.eql( \"Ervin Howell\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy trzeci użytkownik to  Clementine Bauch\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[2].name).to.eql( \"Clementine Bauch\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy czwarty użytkownik to  Patricia Lebsack\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[3].name).to.eql( \"Patricia Lebsack\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy piąty użytkownik to  Chelsey Dietrich\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[4].name).to.eql( \"Chelsey Dietrich\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy szósty użytkownik to  Mrs. Dennis Schulist\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[5].name).to.eql( \"Mrs. Dennis Schulist\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy siódmy użytkownik to   Kurtis Weissnat\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[6].name).to.eql(  \"Kurtis Weissnat\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy ósmy użytkownik to  Nicholas Runolfsdottir V\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[7].name).to.eql( \"Nicholas Runolfsdottir V\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy dziewiąty użytkownik to  Glenna Reichert\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[8].name).to.eql( \"Glenna Reichert\");\r",
+							"});\r",
+							"pm.test(\"Sprawdzenie czy dziesiąty użytkownik to  Clementina DuBuque\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData[9].name).to.eql( \"Clementina DuBuque\");\r",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/users",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
