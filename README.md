@@ -1,2 +1,2 @@
-# TDD
-Próba test driven Development
+# Testy
+Testy które robiłem na uczelni
