@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Kamil_Karmazyn_Zadanie drugie/WebDriverBasics/src/main/java"/>
+	<classpathentry kind="src" path="Kamil_Karmazyn_Zadanie drugie/WebDriverBasics/src/test/java"/>
+	<classpathentry kind="src" path="siculi/src/main/java"/>
+	<classpathentry kind="src" path="siculi/src/test/java"/>
+	<classpathentry kind="src" path="TD/src"/>
+	<classpathentry kind="output" path="Kamil_Karmazyn_Zadanie drugie/WebDriverBasics/target/classes"/>
+</classpath>
