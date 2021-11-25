@@ -9,6 +9,16 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class TDD_Test {
+public String b;
+	@BeforeEach
+	void setUp() throws Exception 
+	{	
+	    Scanner scan = new Scanner(System.in);
+	    System.out.println("Wpisz dobrze");
+	    String a = scan.nextLine();
+	    b = a;
+	}
+	
 	@Test
 	void test() 
 	{
@@ -22,7 +32,7 @@ class TDD_Test {
 		    }
 		    default:
 		   	{
-		   		assertFalse(false);
+		   		assertFalse(true);
 		    }	
 		}}}
 
